@@ -13,17 +13,19 @@ From the <module> sample.py (line 35),
 to the main method in sample.py (line 29), 
 to the run_anonymizer method in the sample.py (line 13)
 to the anonymize method in AnonymizerEngine Class (line 104)
-[complete the call stack here]
+to the _operate method in EngineBase Class (line 54)
+to the __operate_on_text in EngineBase Class (line 86)
+to the create_operator_class method in OperatorsFactory class (line 133)
 ```
 
 * How many if/elif branches are used in selecting the operator?
-*Put your answer here*
+*0, the operator was chosen only with simple if-statments*
 
 * What data structure (a Python data type) exactly is used to select the operator?
-*Put your answer here*
+*A Python Dictionary (or "Dict") is used*
 
 * Explain how "Strategy" design pattern is reflected here.
-
+The Strategy design pattern is reflected here because of the way you can easily add new operators without damaging or interfering with existing ones. Aside from adding the new operator to several management classes, no existing classes needed to be modified. The lack of complex if/elif chains is further proof of the embodiment of the Strategy design pattern and Open-Closed Principle.
 
 ---
 
