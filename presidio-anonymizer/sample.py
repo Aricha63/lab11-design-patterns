@@ -24,9 +24,9 @@ def run_anonymizer(operator_name: str, params: Dict = None):
 def main():
     # Change the following line to test any operator:
 
-    # output = run_anonymizer("replace", {"new_value": "BIP"})
-    output = run_anonymizer("redact")
-    # output = run_anonymizer("initial") # this operator is to be done in the lab
+    #output = run_anonymizer("replace", {"new_value": "BIP"})
+    #output = run_anonymizer("redact")
+    output = run_anonymizer("initial") # this operator is to be done in the lab
     
     print(output)
 
